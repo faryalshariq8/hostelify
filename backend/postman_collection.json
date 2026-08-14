@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "Hostel Management API",
+    "description": "API collection for Hostel Management App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        { "name": "Login", "request": { "method": "POST", "url": { "raw": "{{url}}/api/auth/login", "host": ["{{url}}"], "path": ["api", "auth", "login"] } } },
+        { "name": "Register", "request": { "method": "POST", "url": { "raw": "{{url}}/api/auth/register", "host": ["{{url}}"], "path": ["api", "auth", "register"] } } }
+      ]
+    },
+    {
+      "name": "Hostels",
+      "item": [
+        { "name": "Get Hostels", "request": { "method": "GET", "url": { "raw": "{{url}}/api/hostels", "host": ["{{url}}"], "path": ["api", "hostels"] } } }
+      ]
+    },
+    {
+      "name": "Payments",
+      "item": [
+        { "name": "Payment Intent", "request": { "method": "POST", "url": { "raw": "{{url}}/api/payments/intent", "host": ["{{url}}"], "path": ["api", "payments", "intent"] } } }
+      ]
+    }
+  ],
+  "variable": [
+    { "key": "url", "value": "http://localhost:5000" }
+  ]
+}

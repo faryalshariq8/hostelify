@@ -32,6 +32,22 @@ const getStudents = asyncHandler(async (req, res) => {
   });
 });
 
+// @desc    Delete a student
+// @route   DELETE /api/users/students/:id
+// @access  Admin
+const deleteStudent = asyncHandler(async (req, res) => {
+  const user = await User.findById(req.params.id);
+
+  if (user && user.role === "student") {
+    await User.findByIdAndDelete(req.params.id);
+    res.json({ message: "Student removed" });
+  } else {
+    res.status(404);
+    throw new Error("Student not found");
+  }
+});
+
 module.exports = {
-  getStudents
+  getStudents,
+  deleteStudent
 };

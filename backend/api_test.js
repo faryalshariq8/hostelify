@@ -1,6 +1,5 @@
-// Use native fetch
-
-const API_URL = "http://localhost:5000/api";
+const API_URL =
+  "https://hostelify-production.up.railway.app/api";
 
 let adminToken = "";
 let studentToken = "";

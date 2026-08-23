@@ -283,6 +283,7 @@ Manage Fees
 Manage Announcements
 Reports Dashboard
 🏗️ System Architecture
+```text
                     ┌──────────────────────┐
                     │   React Native App   │
                     │       + Expo         │
@@ -302,6 +303,8 @@ Reports Dashboard
         │  MongoDB Atlas  │        │ Stripe / Other  │
         │    Database     │        │    Services     │
         └─────────────────┘        └─────────────────┘
+'''
+
 🛠️ Technology Stack
 Frontend
 React Native
@@ -425,6 +428,7 @@ The backend exposes REST endpoints for:
 Authentication uses JWT tokens which are attached to protected requests.
 
 🔑 Authentication Flow
+```text
 User Login
      │
      ▼
@@ -445,6 +449,7 @@ Authorization: Bearer <token>
      │
      ▼
 Protected backend route
+'''
 
 The application also validates the saved session when the app starts.
 
@@ -567,6 +572,7 @@ Separate admin and student experiences
 The interface was designed to maintain a consistent visual language across the application's major screens.
 
 📂 Project Structure
+'''text
 hostelify/
 │
 ├── backend/
@@ -605,6 +611,7 @@ hostelify/
 │   └── visitor-requests.png
 │
 └── README.md
+'''
 👩‍💻 Author
 
 Faryal Shariq
